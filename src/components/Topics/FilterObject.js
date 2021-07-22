@@ -2,9 +2,50 @@ import React, { Component } from "react"
 
 
 class FilterObject extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      employees: [
+        {
+          name: "John Douglas",
+          title: "Senior Software Engineer",
+          age: 39
+        },
+        {
+          name: "Sebastian Romero",
+          title: "Software Engineer",
+          age: 35
+        },
+        {
+          name: "Ty Everton",
+          title: "Jr Software Engineer",
+          age: 28
+        }
+      ],
+
+      userInput: "",
+      filteredEmployees: []
+    }
+  }
+
+  handleChange(value) {
+    this.setState({userInput: value})
+  }
+
+  filterEmployees(prop) {
+    
+  }
+
     render() {
       return (
-        <p>FilterObject Component</p>
+        <div className="puzzleBox filterObjectPb">
+          <h4>FILTER OBJECT</h4>,
+          <span className="puzzleText"></span>,
+          <input className="inputLine"/>,
+          <button className="confirmationButton">FILTER</button>,
+          <span className="resultsBox filterObjectRB"></span>,
+        </div>
       )
     }
 }
