@@ -34,7 +34,15 @@ class FilterObject extends Component {
   }
 
   filterEmployees(prop) {
-    
+    let array = userInput;
+    let filteredArray = [];
+    let unfilteredArray = []
+
+    for(let i = 0; i < array.length; i++) {
+      filteredArray.push(userInput[i])
+    }  {
+      unfilteredArray.push(userInput[i])
+    }
   }
 
     render() {
