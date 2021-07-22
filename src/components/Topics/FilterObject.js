@@ -19,7 +19,7 @@ class FilterObject extends Component {
         },
         {
           name: "Ty Everton",
-          title: "Jr Software Engineer",
+          title: "Jr Front-End Developer",
           age: 28
         }
       ],
@@ -41,10 +41,10 @@ class FilterObject extends Component {
       return (
         <div className="puzzleBox filterObjectPb">
           <h4>FILTER OBJECT</h4>,
-          <span className="puzzleText"></span>,
+          <span className="puzzleText">ORIGINAL: {JSON.stringify(this.state.employees, null, 10)}</span>,
           <input className="inputLine"/>,
           <button className="confirmationButton">FILTER</button>,
-          <span className="resultsBox filterObjectRB"></span>,
+          <span className="resultsBox filterObjectRB">FILTERED: {JSON.stringify(this.state.filteredEmployees, null, 10)}</span>,
         </div>
       )
     }
